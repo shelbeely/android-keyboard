@@ -255,6 +255,20 @@ android {
     flavorDimensions = ["buildType"]
 
     productFlavors {
+        fork {
+            dimension "buildType"
+            applicationIdSuffix ".fork"
+            versionNameSuffix "-fork"
+
+            buildConfigField "boolean", "IS_PLAYSTORE_BUILD", "false"
+            buildConfigField "boolean", "UPDATE_CHECKING", "true"
+            buildConfigField "boolean", "UPDATE_CHECKING_NETWORK", "false"
+            buildConfigField "String", "BRANCH", "\"${getBranch()}\""
+            getIsDefault().set(true)
+
+            buildConfigField "String", "PAYMENT_PRICE", "FUTOPAY_PRICE"
+        }
+
         unstable {
             dimension "buildType"
             applicationIdSuffix ".unstable"
@@ -264,7 +278,6 @@ android {
             buildConfigField "boolean", "UPDATE_CHECKING", "true"
             buildConfigField "boolean", "UPDATE_CHECKING_NETWORK", "false"
             buildConfigField "String", "BRANCH", "\"${getBranch()}\""
-            getIsDefault().set(true)
 
             buildConfigField "String", "PAYMENT_PRICE", "FUTOPAY_PRICE"
         }
@@ -309,6 +322,11 @@ android {
             java.srcDirs = ['common/src', 'java/src']
             manifest.srcFile 'java/AndroidManifest.xml'
             assets.srcDirs = ['java/assets']
+        }
+
+        fork {
+            java.srcDirs = ['common/src', 'java/src', 'java/stable/java']
+            manifest.srcFile 'java/stable/AndroidManifest.xml'
         }
 
         playstore {
@@ -388,6 +406,8 @@ dependencies {
     stableImplementation 'ch.acra:acra-dialog:5.11.1'
     unstableImplementation 'ch.acra:acra-mail:5.11.1'
     unstableImplementation 'ch.acra:acra-dialog:5.11.1'
+    forkImplementation 'ch.acra:acra-mail:5.11.1'
+    forkImplementation 'ch.acra:acra-dialog:5.11.1'
 
     implementation 'sh.calvin.reorderable:reorderable:2.2.0'
 
