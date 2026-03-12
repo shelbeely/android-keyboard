@@ -638,4 +638,28 @@ Default is %1$s</string>
     <string name="personal_dictionary_delete_additional_file">Delete extra dictionary file?</string>
     <!-- %1$s will be replaced with the custom dictionary name -->
     <string name="personal_dictionary_delete_additional_file_text">%1$s will be deleted</string>
+
+    <!-- Gemini Nano action -->
+    <string name="action_gemini_nano_title">Gemini Nano</string>
+    <string name="action_gemini_nano_tab_tone">Tone</string>
+    <string name="action_gemini_nano_tab_rewrite">Rewrite</string>
+    <string name="action_gemini_nano_tab_summarize">Summarize</string>
+    <string name="action_gemini_nano_input_hint">Enter text to transform…</string>
+    <string name="action_gemini_nano_clipboard_hint">Clipboard text will appear here…</string>
+    <string name="action_gemini_nano_run_button">Run</string>
+    <string name="action_gemini_nano_insert_button">Insert</string>
+    <string name="action_gemini_nano_tone_formal">Formal</string>
+    <string name="action_gemini_nano_tone_friendly">Friendly</string>
+    <string name="action_gemini_nano_tone_concise">Concise</string>
+    <string name="action_gemini_nano_tone_elaborate">Elaborate</string>
+    <string name="action_gemini_nano_status_checking">Checking Gemini Nano availability…</string>
+    <string name="action_gemini_nano_status_not_supported">Gemini Nano is not available on this device. A Pixel 9 or newer with Android 15+ is required.</string>
+    <string name="action_gemini_nano_status_downloadable">Gemini Nano model is available but needs to be downloaded. Tap to request download.</string>
+    <string name="action_gemini_nano_status_downloading">Gemini Nano model is downloading in the background. Please try again shortly.</string>
+    <string name="action_gemini_nano_request_download_button">Request Download</string>
+    <string name="action_gemini_nano_error">Gemini Nano inference failed: %1$s</string>
+    <string name="action_gemini_nano_running">Running Gemini Nano…</string>
+    <string name="action_gemini_nano_result_label">Result</string>
+    <string name="action_gemini_nano_no_clipboard_text">Clipboard is empty or contains non-text content.</string>
+    <string name="action_gemini_nano_input_too_short">Please enter at least a few words of text.</string>
 </resources>

@@ -403,6 +403,11 @@ dependencies {
 
     implementation "com.charleskorn.kaml:kaml:0.61.0"
 
+    // ML Kit GenAI APIs – Gemini Nano via AICore (Proofreading + Summarization)
+    implementation 'com.google.mlkit:genai-common:1.0.0-beta1'
+    implementation 'com.google.mlkit:genai-proofreading:1.0.0-beta1'
+    implementation 'com.google.mlkit:genai-summarization:1.0.0-beta1'
+
     // For MOZC
     implementation 'com.google.protobuf:protobuf-javalite:3.8.0'
     implementation 'com.google.guava:guava:33.4.8-android'
