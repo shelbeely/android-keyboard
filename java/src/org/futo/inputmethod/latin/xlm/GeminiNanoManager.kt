@@ -182,7 +182,7 @@ object GeminiNanoManager {
                     "Output ONLY 3 replies, one per line, with no numbering or bullet points:\n\n$text"
         ) ?: return emptyList()
         return response.lines()
-            .map { it.trim().trimStart('1', '2', '3', '.', ')', '-', '*', ' ').trim() }
+            .map { it.trimStart('1', '2', '3', '.', ')', '-', '*', ' ').trim() }
             .filter { it.isNotBlank() }
             .take(3)
     }
