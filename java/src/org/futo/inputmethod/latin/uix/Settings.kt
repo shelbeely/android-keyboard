@@ -388,3 +388,8 @@ val SHOW_EMOJI_SUGGESTIONS = SettingsKey(
     key = booleanPreferencesKey("suggestEmojis"),
     default = true
 )
+
+val USE_GEMINI_NANO = SettingsKey(
+    key = booleanPreferencesKey("useGeminiNano"),
+    default = true
+)
