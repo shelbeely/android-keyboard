@@ -9,6 +9,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import org.futo.inputmethod.latin.R
 import org.futo.inputmethod.latin.settings.Settings
+import org.futo.inputmethod.latin.uix.USE_GEMINI_NANO
 import org.futo.inputmethod.latin.uix.USE_TRANSFORMER_FINETUNING
 import org.futo.inputmethod.latin.uix.settings.NavigationItemStyle
 import org.futo.inputmethod.latin.uix.settings.Tip
@@ -116,7 +117,20 @@ val PredictiveTextMenu = UserSettingsMenu(
         ).copy(visibilityCheck = {
             // Opposite of visibilityCheckLMEnabled
             !useSharedPrefsBool(Settings.PREF_KEY_USE_TRANSFORMER_LM, true).value
-        })
+        }),
         //}
+
+        userSettingToggleDataStore(
+            title = R.string.gemini_nano_settings_enable,
+            subtitle = R.string.gemini_nano_settings_enable_subtitle,
+            setting = USE_GEMINI_NANO,
+            icon = {
+                Icon(
+                    painterResource(id = R.drawable.ai_spark),
+                    contentDescription = null,
+                    tint = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.75f)
+                )
+            }
+        )
     )
 )

@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:width="24dp"
+    android:height="24dp">
+    <!-- Central star/sparkle shape -->
+    <path
+        android:pathData="M12 2 L13.5 8.5 L20 7 L14.5 11.5 L17 18 L12 14 L7 18 L9.5 11.5 L4 7 L10.5 8.5 Z"
+        android:fillColor="#FFFFFF" />
+    <!-- Small sparkles -->
+    <path
+        android:pathData="M20 2 L20.8 4.2 L23 5 L20.8 5.8 L20 8 L19.2 5.8 L17 5 L19.2 4.2 Z"
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.8" />
+    <path
+        android:pathData="M5 18 L5.5 19.5 L7 20 L5.5 20.5 L5 22 L4.5 20.5 L3 20 L4.5 19.5 Z"
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.6" />
+</vector>

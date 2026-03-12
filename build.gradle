@@ -409,6 +409,9 @@ dependencies {
     implementation(name:'mozc-release', ext:'aar')
     // End for MOZC
 
+    // Google AI Edge - On-device Gemini Nano via AICore
+    implementation 'com.google.ai.edge.aicore:aicore:0.0.1-exp01'
+
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
 

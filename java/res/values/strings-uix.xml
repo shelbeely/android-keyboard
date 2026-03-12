@@ -638,4 +638,40 @@ Default is %1$s</string>
     <string name="personal_dictionary_delete_additional_file">Delete extra dictionary file?</string>
     <!-- %1$s will be replaced with the custom dictionary name -->
     <string name="personal_dictionary_delete_additional_file_text">%1$s will be deleted</string>
+
+    <!-- Gemini Nano / AICore on-device AI features -->
+    <string name="action_gemini_nano_title">AI Text Tools</string>
+    <string name="gemini_nano_settings_title">Gemini Nano (On-Device AI)</string>
+    <string name="gemini_nano_settings_enable">Enable Gemini Nano features</string>
+    <string name="gemini_nano_settings_enable_subtitle">Use on-device Gemini Nano via AICore for text transformations (requires Pixel 9+ with Android 14+)</string>
+    <string name="gemini_nano_unavailable">Gemini Nano is not available on this device. This feature requires a Pixel 9+ running Android 14 or later with AICore enabled.</string>
+    <string name="gemini_nano_checking">Checking Gemini Nano availability…</string>
+    <string name="gemini_nano_available">Gemini Nano is available</string>
+    <string name="gemini_nano_op_rewrite">Rewrite</string>
+    <string name="gemini_nano_op_tone">Change Tone</string>
+    <string name="gemini_nano_op_summarize">Summarize</string>
+    <string name="gemini_nano_op_proofread">Proofread</string>
+    <string name="gemini_nano_op_continue">Continue</string>
+    <string name="gemini_nano_op_smart_reply">Smart Reply</string>
+    <string name="gemini_nano_tone_formal">Formal</string>
+    <string name="gemini_nano_tone_casual">Casual</string>
+    <string name="gemini_nano_tone_professional">Professional</string>
+    <string name="gemini_nano_tone_friendly">Friendly</string>
+    <string name="gemini_nano_tone_concise">Concise</string>
+    <string name="gemini_nano_result_insert">Insert</string>
+    <string name="gemini_nano_result_copy">Copy</string>
+    <string name="gemini_nano_result_dismiss">Dismiss</string>
+    <string name="gemini_nano_processing">Processing…</string>
+    <string name="gemini_nano_no_text">No text found. Type something or copy text to clipboard first.</string>
+    <string name="gemini_nano_error">Could not generate a result. Please try again.</string>
+    <string name="gemini_nano_source_label">Text to transform:</string>
+    <string name="gemini_nano_result_label">Result:</string>
+    <string name="gemini_nano_clipboard_label">Clipboard text:</string>
+    <string name="gemini_nano_smart_reply_insert_hint">Tap a reply to insert it</string>
+    <string name="gemini_nano_op_rewrite_desc">Rewrite the text before the cursor for improved clarity</string>
+    <string name="gemini_nano_op_tone_desc">Change the tone of the text before the cursor</string>
+    <string name="gemini_nano_op_summarize_desc">Summarize clipboard content in 1–2 sentences</string>
+    <string name="gemini_nano_op_proofread_desc">Fix spelling, grammar and punctuation</string>
+    <string name="gemini_nano_op_continue_desc">Continue writing from where you left off</string>
+    <string name="gemini_nano_op_smart_reply_desc">Suggest short reply options for the current conversation</string>
 </resources>
