@@ -75,7 +75,7 @@ object GeminiNanoManager {
                         maxOutputTokens = 1024
                     }
                 )
-                m.prepareInferenceModel()
+                m.prepareInferenceEngine()
                 model = m
                 availability = GeminiAvailability.AVAILABLE
                 true
