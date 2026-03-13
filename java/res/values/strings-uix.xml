@@ -643,8 +643,8 @@ Default is %1$s</string>
     <string name="action_gemini_nano_title">AI Text Tools</string>
     <string name="gemini_nano_settings_title">Gemini Nano (On-Device AI)</string>
     <string name="gemini_nano_settings_enable">Enable Gemini Nano features</string>
-    <string name="gemini_nano_settings_enable_subtitle">Use on-device Gemini Nano via AICore for text transformations (requires Pixel 9+ with Android 14+)</string>
-    <string name="gemini_nano_unavailable">Gemini Nano is not available on this device. This feature requires a Pixel 9+ running Android 14 or later with AICore enabled.</string>
+    <string name="gemini_nano_settings_enable_subtitle">Use on-device Gemini Nano via AICore for text transformations (requires a supported Pixel device with Android 14+)</string>
+    <string name="gemini_nano_unavailable">Gemini Nano is not available on this device. This feature requires a supported Pixel device running Android 14 or later with AICore enabled.</string>
     <string name="gemini_nano_checking">Checking Gemini Nano availability…</string>
     <string name="gemini_nano_available">Gemini Nano is available</string>
     <string name="gemini_nano_op_rewrite">Rewrite</string>
