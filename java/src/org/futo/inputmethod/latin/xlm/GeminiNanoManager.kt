@@ -33,7 +33,8 @@ enum class GeminiAvailability {
 /**
  * Manages on-device Gemini Nano inference via Android's AICore system service.
  *
- * AICore is available on Pixel 9+ devices running Android 14 (API 34) or higher.
+ * AICore is available on supported Pixel devices (Pixel 9 series and later) running Android 14
+ * (API 34) or higher.
  * This manager detects availability, initialises the model, and provides text-transformation
  * helpers consumed by [GeminiNanoAction].
  */
