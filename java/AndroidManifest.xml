@@ -127,7 +127,7 @@
         </activity>
 
         <!-- Broadcast receivers -->
-        <receiver android:name="SystemBroadcastReceiver"
+        <receiver android:name=".SystemBroadcastReceiver"
              android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
@@ -168,6 +168,7 @@
 
         <activity
             android:name=".MicPermissionActivity"
+            android:exported="false"
             android:clearTaskOnLaunch="false"
             android:launchMode="standard"
             android:noHistory="true"
