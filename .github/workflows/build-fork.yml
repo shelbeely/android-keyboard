@@ -46,9 +46,14 @@ jobs:
         env:
           BRANCH_NAME: ${{ github.ref_name }}
 
+      - name: Prepare APK for upload
+        run: |
+          mkdir -p apk-dist
+          find build/outputs/apk/fork/release/ -name "*.apk" -maxdepth 1 | head -1 | xargs -I{} cp {} apk-dist/futo-keyboard-fork.apk
+
       - name: Upload Fork APK artifact
         uses: actions/upload-artifact@v4
         with:
           name: fork-release-apk
-          path: build/outputs/apk/fork/release/*.apk
+          path: apk-dist/futo-keyboard-fork.apk
           if-no-files-found: error
