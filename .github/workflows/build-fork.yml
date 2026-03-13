@@ -48,8 +48,11 @@ jobs:
 
       - name: Prepare APK for upload
         run: |
+          set -e
           mkdir -p apk-dist
-          find build/outputs/apk/fork/release/ -name "*.apk" -maxdepth 1 | head -1 | xargs -I{} cp {} apk-dist/futo-keyboard-fork.apk
+          APK=$(find build/outputs/apk/fork/release/ -name "*.apk" -maxdepth 1 | head -1)
+          if [ -z "$APK" ]; then echo "ERROR: No APK found in build output"; exit 1; fi
+          cp "$APK" apk-dist/futo-keyboard-fork.apk
 
       - name: Upload Fork APK artifact
         uses: actions/upload-artifact@v4
